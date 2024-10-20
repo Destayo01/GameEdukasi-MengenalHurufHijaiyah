@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GlobalEvent</name>
+    <events>
+        <event-block sid="204076245226387">
+            <conditions>
+                <condition id="0" name="On function" sid="195412203110400" type="Function">
+                    <param id="0" name="Name">&quot;call-suara&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="570774084832344">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="700857411128379" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="140291645469688" type="Audio">
+                            <param id="0" name="Audio file">fatah_a</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="834288706873870" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;a&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="160879631950310">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="963293026960487" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="102839557273929" type="Audio">
+                            <param id="0" name="Audio file">fatah_ba</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="692744039340761" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ba&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="738605070921487">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="250292056694907" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="494606851078049" type="Audio">
+                            <param id="0" name="Audio file">fatah_ta</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="452394070390440" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ta&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="642223177639642">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="810679705447148" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="913333725764322" type="Audio">
+                            <param id="0" name="Audio file">fatah_tsa</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="491959369647893" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;tsa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="390967927076604">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="922771321656589" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="508926193658189" type="Audio">
+                            <param id="0" name="Audio file">fatah_ja</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="260002653551974" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ja&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="397764441074983">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="748115194697423" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="655652889126541" type="Audio">
+                            <param id="0" name="Audio file">fatah_ha</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="372715103054023" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="158258813861889">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="422040424244847" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="213433468142659" type="Audio">
+                            <param id="0" name="Audio file">fatah_kho</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="587371440884611" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;kho&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="403411152900426">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="306201112435923" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="694715605771887" type="Audio">
+                            <param id="0" name="Audio file">fatah_da</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="958110966974562" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;da&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="538755731017939">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="995456872500009" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="727835515070730" type="Audio">
+                            <param id="0" name="Audio file">fatah_dza</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="985225128553091" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;dza&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="982845633061980">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="176205181381039" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="941899718693007" type="Audio">
+                            <param id="0" name="Audio file">fatah_ro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="721879869486511" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ra&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="968687939648754">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="202682504844997" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="201714701023549" type="Audio">
+                            <param id="0" name="Audio file">fatah_za</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="126649696434417" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;za&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="638104460856994">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="432604979964478" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="490925907281415" type="Audio">
+                            <param id="0" name="Audio file">fatah_sa</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="555464659517151" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;sa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="402782199980973">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="630151789803508" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="840073307834904" type="Audio">
+                            <param id="0" name="Audio file">fatah_sya</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="151386400296256" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;sya&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="408583149916848">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="641263987144880" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="365914832422544" type="Audio">
+                            <param id="0" name="Audio file">fatah_sho</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="612335177046626" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;sha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943962894704585">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="313632790178922" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="120221398917409" type="Audio">
+                            <param id="0" name="Audio file">fatah_dho</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="936480059569029" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;dha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="484530548115900">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="159539772379021" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="422597720886743" type="Audio">
+                            <param id="0" name="Audio file">fatah_tho</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="410743843227720" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;tho&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="639774288969275">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="192285355034202" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="977509430204574" type="Audio">
+                            <param id="0" name="Audio file">fatah_dzo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="804781170496548" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;dzo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="928828983113197">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="798723134639496" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="657043371545628" type="Audio">
+                            <param id="0" name="Audio file">fatah_aa</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="552446956045326" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;aa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="908423169402118">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="364386395249050" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="508762433643993" type="Audio">
+                            <param id="0" name="Audio file">fatah_gho</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="931838813516124" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;gho&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="607027151304197">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="955624488970925" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="319079686053767" type="Audio">
+                            <param id="0" name="Audio file">fatah_fa</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="968505492049847" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;fa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906877788769290">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="634758929280977" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="833640446129634" type="Audio">
+                            <param id="0" name="Audio file">fatah_qo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="212247600199620" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;qo&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="220675070451946">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="384120211133522" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="664615094482089" type="Audio">
+                            <param id="0" name="Audio file">fatah_ka</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="897069178337569" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ka&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="300973086574075">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="426840108960064" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="180755637061523" type="Audio">
+                            <param id="0" name="Audio file">fatah_la</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="951422844594505" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;la&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="540290370711578">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="107124744719613" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="207702859672891" type="Audio">
+                            <param id="0" name="Audio file">fatah_ma</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="551893561763984" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ma&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="292450065583881">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="453916601448130" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="733198787356149" type="Audio">
+                            <param id="0" name="Audio file">fatah_na</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="463841050379492" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;na&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="707600016293496">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="150069034594724" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="119451277453599" type="Audio">
+                            <param id="0" name="Audio file">fatah_wa</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="823764809772383" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;wa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="564378721617996">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="537106851562429" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="312352619623397" type="Audio">
+                            <param id="0" name="Audio file">fatah_haa</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="752767210946154" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;haa&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="432899963187681">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="633852728133636" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="357989688688663" type="Audio">
+                            <param id="0" name="Audio file">fatah_ya</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="947389537609674" type="SpriteFont2">
+                            <param id="0" name="Text">&quot;ya&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="701847598103472">
+            <conditions>
+                <condition id="0" name="On function" sid="698264603682059" type="Function">
+                    <param id="0" name="Name">&quot;anim-membesar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="247917580539554" type="huruf">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="923353975912886" type="huruf">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.Width + 100</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="645445624925838" type="huruf">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.Height + 100</param>
+                </action>
+                <action id="-16" name="Wait" sid="103703575543396" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="484675464469534" type="huruf">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="958712187301725" type="huruf">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">300</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="865687365772295" type="huruf">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">300</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884138519223209">
+            <conditions>
+                <condition id="0" name="On function" sid="123808176715701" type="Function">
+                    <param id="0" name="Name">&quot;anim-Game2&quot;</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="164771926648662" type="huruf">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">huruf</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="729635709025239" type="huruf">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="718764658246980" type="huruf">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.Width + 50</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="828637710731527" type="huruf">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.Height + 50</param>
+                </action>
+                <action id="-16" name="Wait" sid="910931765922949" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="872865799617564" type="huruf">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="850435330828193" type="huruf">
+                    <param id="0" name="Target is">4</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">150</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="596341865841730" type="huruf">
+                    <param id="0" name="Target is">5</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856367938137710">
+            <conditions>
+                <condition id="0" name="On function" sid="240388129031739" type="Function">
+                    <param id="0" name="Name">&quot;fade-in&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="187850275655483" type="Hitam">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="630709740699292" type="Hitam">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="963705630342357">
+            <conditions>
+                <condition id="0" name="On function" sid="525154870426599" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="217374557133367" type="Hitam">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="537658067344332" type="Hitam">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="978910977945118">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="186254014942081" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="147048747188110" type="Function">
+                    <param id="0" name="Name">&quot;fade-in&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="437347286094064">
+            <conditions>
+                <condition id="3" name="On touched object" sid="444868905809745" type="Touch">
+                    <param id="0" name="Object">Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="502170256781400" type="Button">
+                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">10</param>
+                </action>
+                <action id="-16" name="Wait" sid="541443680087913" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="494740692917996" type="Button">
+                    <param id="0" name="Effect">&quot;AdjustHSL&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="120046877484123">
+            <conditions>
+                <condition id="3" name="On touched object" sid="929320624258517" type="Touch">
+                    <param id="0" name="Object">btn_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="330622481546361" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="255141611180746" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="919431571870422" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="728937287114803" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363405474388017">
+            <conditions>
+                <condition id="3" name="On touched object" sid="408694997394642" type="Touch">
+                    <param id="0" name="Object">GAME</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="471236106676504" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="595762067971898" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="825249999136867" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="140339015933373" type="System">
+                    <param id="0" name="Layout">Game1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="336000189694845">
+            <conditions>
+                <condition id="3" name="On touched object" sid="508871301389058" type="Touch">
+                    <param id="0" name="Object">GAME2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="977577351825975" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="482949818919721" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="751961369955574" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="616158914805497" type="System">
+                    <param id="0" name="Layout">Game2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="303256171268288">
+            <conditions>
+                <condition id="3" name="On touched object" sid="820138954480578" type="Touch">
+                    <param id="0" name="Object">GAME3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="478482036768042" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="872033880503364" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="832001598294353" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="857467981743180" type="System">
+                    <param id="0" name="Layout">Game3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

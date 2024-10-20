@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game2</name>
+    <events>
+        <include>GlobalEvent</include>
+        <event-block sid="463128561317996">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="252152235453797" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="519979536567648" type="System" />
+                <action id="-12" name="Set group active" sid="880525458007484" type="System">
+                    <param id="0" name="Group name">&quot;Sistem Game 2 Otomatis&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346775357421665">
+            <conditions>
+                <condition id="3" name="On touched object" sid="308806641502213" type="Touch">
+                    <param id="0" name="Object">huruf</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="127416288140996" type="System">
+                    <param id="0" name="Variable">Auto</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="938638080413274" type="System">
+                    <param id="0" name="Variable">Huruf</param>
+                    <param id="1" name="Value">huruf.AnimationFrame</param>
+                </action>
+                <action id="0" name="Call function" sid="596069603883863" type="Function">
+                    <param id="0" name="Name">&quot;call-suara&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="872520234984496">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="448024883860483" type="Function">
+                            <param id="0" name="Name">&quot;anim-Game2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="ini adalah sistem otomatis2" sid="724173896011972" title="Sistem Game 2 Otomatis">
+            <sub-events>
+                <event-block sid="946563200343184">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="830475420317168" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="203199023500238">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="163864126342323" type="System">
+                                    <param id="0" name="Variable">Huruf</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">27</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="832629649136712" type="System">
+                                    <param id="0" name="Variable">Huruf</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="447039978093241">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="199219694722935" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="446990333229308" type="System">
+                                    <param id="0" name="Variable">Huruf</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="188097711489307">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="494505210764018" type="Function">
+                                    <param id="0" name="Name">&quot;call-suara&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="922973376061797" type="Function">
+                                    <param id="0" name="Name">&quot;anim-Game2&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="426180547139350">
+            <conditions>
+                <condition id="3" name="On touched object" sid="700354972489145" type="Touch">
+                    <param id="0" name="Object">BTN_AUTO_AKTIF</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="687566039321812" type="System">
+                    <param id="0" name="Variable">Huruf</param>
+                    <param id="1" name="Value">27</param>
+                </action>
+                <action id="0" name="Play" sid="647936516982952" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="632220044806689">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="919920122504008" type="System">
+                            <param id="0" name="Variable">Auto</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="146490659451229" type="System">
+                            <param id="0" name="Variable">Auto</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="702773405549149" type="BTN_AUTO_AKTIF">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="470558688320565" type="System">
+                            <param id="0" name="Group name">&quot;Sistem Game 2 Otomatis&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="661512167522837">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="885624177932150" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="197165689929552" type="System">
+                            <param id="0" name="Variable">Auto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="880601851139632" type="BTN_AUTO_AKTIF">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="464554454852283" type="System">
+                            <param id="0" name="Group name">&quot;Sistem Game 2 Otomatis&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="970299516070765">
+            <conditions>
+                <condition id="3" name="On touched object" sid="544984736654706" type="Touch">
+                    <param id="0" name="Object">btn_mode_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="247945684163876" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="469954956463351" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="640804460237491" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="624185979471840" type="System">
+                    <param id="0" name="Layout">Game1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

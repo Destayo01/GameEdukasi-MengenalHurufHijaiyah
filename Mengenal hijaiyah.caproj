@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Mengenal hijaiyah</name>
+    <description>ini deskripsi</description>
+    <version>1</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>net.project5.mengenalhijaiyah</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Chris Kent" id="SpriteFontPlus" version="1">SpriteFont+</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="hsladjust">Adjust HSL</effect>
+        <effect author="Scirra" id="tint">Tint</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="System">
+            <object-type name="Function" sid="201944278904811">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Audio" sid="298977259143652">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Touch" sid="859717679548094">
+                <plugin id="Touch" />
+            </object-type>
+        </object-folder>
+        <object-type name="bg" sid="179714116306441">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339453510539726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\bg.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="huruf" sid="596303664566192">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="493892350070472">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300992798920095" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\001-alif-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\002-ba-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\003-taa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\004-tha-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\005-jeem-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\006-haa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\007-khaa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\008-dal-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\009-dhal-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\010-raa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\011-jaa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\012-seen-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\013-sheen-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\014-saad-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\015-dhaad-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\016-toa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\017-dhaa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\018-ain-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\019-ghain-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\020-faa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\021-qaaf-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\022-kaaf-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\023-laam-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\024-meem-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\025-noon-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\026-waw-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\027-ha-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\029-yaa-removebg-preview.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="container" sid="768811648757817">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="133973787528665">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Tint">
+                    <effect id="tint" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424854790666833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\container.png">
+                        <collision-poly>
+                            <point x="0.0251572" y="0.0363636" />
+                            <point x="0.5" y="0" />
+                            <point x="0.974843" y="0.0363636" />
+                            <point x="1" y="0.5" />
+                            <point x="0.974843" y="0.963636" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0251572" y="0.963636" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_home" sid="279185865468632">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831690851624874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="E:\pengenalan huruf hijaiyah\aset\button\btn_home.png">
+                        <collision-poly>
+                            <point x="0.143939" y="0.151394" />
+                            <point x="0.5" y="0" />
+                            <point x="0.856061" y="0.151394" />
+                            <point x="1" y="0.498008" />
+                            <point x="0.856061" y="0.848606" />
+                            <point x="0.5" y="1" />
+                            <point x="0.143939" y="0.848606" />
+                            <point x="0" y="0.498008" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BTN_AUTO_AKTIF" sid="841240869994060">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="675732061867891" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="E:\pengenalan huruf hijaiyah\aset\button\BTN_AUTO_OFF.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.219124" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.219124" />
+                            <point x="0.9" y="0.498008" />
+                            <point x="0.833333" y="0.780877" />
+                            <point x="0.5" y="1" />
+                            <point x="0.166667" y="0.780877" />
+                            <point x="0.1" y="0.498008" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="E:\pengenalan huruf hijaiyah\aset\button\BTN_AUTO_AKTIF.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.219124" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.219124" />
+                            <point x="0.9" y="0.498008" />
+                            <point x="0.833333" y="0.780877" />
+                            <point x="0.5" y="1" />
+                            <point x="0.166667" y="0.780877" />
+                            <point x="0.1" y="0.498008" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BTN_RIGHT" sid="641055164397082">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503431323738909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="E:\pengenalan huruf hijaiyah\aset\button\BTN_RIGHT.png">
+                        <collision-poly>
+                            <point x="0.143939" y="0.151394" />
+                            <point x="0.5" y="0" />
+                            <point x="0.856061" y="0.151394" />
+                            <point x="1" y="0.498008" />
+                            <point x="0.856061" y="0.848606" />
+                            <point x="0.5" y="1" />
+                            <point x="0.143939" y="0.848606" />
+                            <point x="0" y="0.498008" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BTN_LEFT" sid="890010844643468">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633275038058666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="E:\pengenalan huruf hijaiyah\aset\button\BTN_LEFT.png">
+                        <collision-poly>
+                            <point x="0.143939" y="0.151394" />
+                            <point x="0.5" y="0" />
+                            <point x="0.856061" y="0.151394" />
+                            <point x="1" y="0.498008" />
+                            <point x="0.856061" y="0.848606" />
+                            <point x="0.5" y="1" />
+                            <point x="0.143939" y="0.848606" />
+                            <point x="0" y="0.498008" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_mode_" sid="124875425898736">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791308832842845" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501992" original-source="E:\pengenalan huruf hijaiyah\aset\button\btn_mode_2.png">
+                        <collision-poly>
+                            <point x="0.143939" y="0.151394" />
+                            <point x="0.5" y="0" />
+                            <point x="0.856061" y="0.151394" />
+                            <point x="1" y="0.498008" />
+                            <point x="0.856061" y="0.848606" />
+                            <point x="0.5" y="1" />
+                            <point x="0.143939" y="0.848606" />
+                            <point x="0" y="0.498008" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501992" hotspotY="0.501992" original-source="D:\pengenalan huruf hijaiyah\aset\button\btn_mode_1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="241716736310097">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="D:\pengenalan huruf hijaiyah\aset\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="SpriteFont2" sid="200215438372317">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="D:\pengenalan huruf hijaiyah\aset\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="Huruf_Container" sid="396412436498787">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="395915036836979" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\001-alif-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\002-ba-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\003-taa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\004-tha-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\005-jeem-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\006-haa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\007-khaa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\008-dal-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\009-dhal-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\010-raa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\011-jaa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\012-seen-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\013-sheen-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\014-saad-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\015-dhaad-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\016-toa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\017-dhaa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\018-ain-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\019-ghain-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\020-faa-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\021-qaaf-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\022-kaaf-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\023-laam-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\024-meem-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\025-noon-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\026-waw-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\027-ha-removebg-preview.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\pengenalan huruf hijaiyah\aset\huruf hijayah\Untitled\029-yaa-removebg-preview.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Huruf_Jawaban" sid="704293960163048">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="id" sid="445119386647948" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="709683305592292">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="AnimPosition" sid="518980416454041">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="AnimSize" sid="917322849641424">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983471805530655" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\15.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\16.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\17.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\18.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\19.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\20.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\21.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\23.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\24.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\25.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\26.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\27.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\pengenalan huruf hijaiyah\aset\huruf hijayah\warna putih\28.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PengalihID" sid="958526791811591">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="id" sid="706568074963358" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791611913308541" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PengalihSoalRandom" sid="825165569018371">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="407845400993414" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821541854444017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hitam" sid="606525702875942">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="123261574394505">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994893405094564" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="865626305510752">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298586123974478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="901976755877933">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377020200128017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501222" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\title.png">
+                        <collision-poly>
+                            <point x="0.187166" y="0.342298" />
+                            <point x="0.5" y="0.0244499" />
+                            <point x="0.799465" y="0.366748" />
+                            <point x="0.998663" y="0.498778" />
+                            <point x="0.885027" y="0.789731" />
+                            <point x="0.11631" y="0.787286" />
+                            <point x="0.0013369" y="0.498778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_play" sid="602173708324692">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881804276870330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501887" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\btn_play.png">
+                        <collision-poly>
+                            <point x="0.147059" y="0.150943" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852941" y="0.150943" />
+                            <point x="0.985294" y="0.498113" />
+                            <point x="0.827206" y="0.822641" />
+                            <point x="0.5" y="0.94717" />
+                            <point x="0.172794" y="0.822641" />
+                            <point x="0.0147059" y="0.498113" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_music_off" sid="643892197803733">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579798431842510" speed="5">
+                    <frame duration="0" hotspotX="0.501873" hotspotY="0.501859" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\btn_music_on.png">
+                        <collision-poly>
+                            <point x="0.153558" y="0.152416" />
+                            <point x="0.498127" y="0" />
+                            <point x="0.846442" y="0.152416" />
+                            <point x="0.970037" y="0.498141" />
+                            <point x="0.812734" y="0.814126" />
+                            <point x="0.498127" y="0.933086" />
+                            <point x="0.187266" y="0.814126" />
+                            <point x="0.0299625" y="0.498141" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501873" hotspotY="0.501859" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\btn_music_off.png">
+                        <collision-poly>
+                            <point x="0.153558" y="0.152416" />
+                            <point x="0.498127" y="0" />
+                            <point x="0.846442" y="0.152416" />
+                            <point x="0.970037" y="0.498141" />
+                            <point x="0.812734" y="0.814126" />
+                            <point x="0.498127" y="0.933086" />
+                            <point x="0.187266" y="0.814126" />
+                            <point x="0.0299625" y="0.498141" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_sound_off" sid="589384869207278">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109281370695741" speed="5">
+                    <frame duration="0" hotspotX="0.501873" hotspotY="0.501859" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\btn_sound_on.png">
+                        <collision-poly>
+                            <point x="0.153558" y="0.152416" />
+                            <point x="0.498127" y="0" />
+                            <point x="0.846442" y="0.152416" />
+                            <point x="0.970037" y="0.498141" />
+                            <point x="0.812734" y="0.814126" />
+                            <point x="0.498127" y="0.933086" />
+                            <point x="0.187266" y="0.814126" />
+                            <point x="0.0299625" y="0.498141" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501873" hotspotY="0.501859" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\btn_sound_off.png">
+                        <collision-poly>
+                            <point x="0.153558" y="0.152416" />
+                            <point x="0.498127" y="0" />
+                            <point x="0.846442" y="0.152416" />
+                            <point x="0.970037" y="0.498141" />
+                            <point x="0.812734" y="0.814126" />
+                            <point x="0.498127" y="0.933086" />
+                            <point x="0.187266" y="0.814126" />
+                            <point x="0.0299625" y="0.498141" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btn_info" sid="717825777638866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="531426607601848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\btn_info.png">
+                        <collision-poly>
+                            <point x="0.183824" y="0.171233" />
+                            <point x="0.5" y="0.0684932" />
+                            <point x="0.816176" y="0.171233" />
+                            <point x="0.985294" y="0.5" />
+                            <point x="0.8125" y="0.825342" />
+                            <point x="0.5" y="0.928082" />
+                            <point x="0.1875" y="0.825342" />
+                            <point x="0.0147059" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GAME" sid="338896048918131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401926612555213" speed="5">
+                    <frame duration="1" hotspotX="0.500986" hotspotY="0.5" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\GAME0.png">
+                        <collision-poly>
+                            <point x="0.0887574" y="0.0941423" />
+                            <point x="0.499014" y="0" />
+                            <point x="0.90927" y="0.0962343" />
+                            <point x="0.976331" y="0.5" />
+                            <point x="0.893491" y="0.887029" />
+                            <point x="0.499014" y="0.945607" />
+                            <point x="0.0986193" y="0.895397" />
+                            <point x="0.0118343" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GAME2" sid="377001001283519">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232888564435047" speed="5">
+                    <frame duration="1" hotspotX="0.500986" hotspotY="0.5" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\GAME1.png">
+                        <collision-poly>
+                            <point x="0.0887574" y="0.0941423" />
+                            <point x="0.499014" y="0" />
+                            <point x="0.90927" y="0.0962343" />
+                            <point x="0.976331" y="0.5" />
+                            <point x="0.893491" y="0.887029" />
+                            <point x="0.499014" y="0.945607" />
+                            <point x="0.0986193" y="0.895397" />
+                            <point x="0.0118343" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GAME3" sid="383207136106895">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488273589632140" speed="5">
+                    <frame duration="1" hotspotX="0.500986" hotspotY="0.5" original-source="D:\TIK SMK AM\Kelas XII\PRODUKTIF\GAME\pengenalan huruf hijaiyah\aset\button\GAME2.png">
+                        <collision-poly>
+                            <point x="0.0887574" y="0.0941423" />
+                            <point x="0.499014" y="0" />
+                            <point x="0.90927" y="0.0962343" />
+                            <point x="0.976331" y="0.5" />
+                            <point x="0.893491" y="0.887029" />
+                            <point x="0.499014" y="0.945607" />
+                            <point x="0.0986193" y="0.895397" />
+                            <point x="0.0118343" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Button" plugin-id="Sprite" sid="805312090756296">
+            <members>
+                <member>BTN_AUTO_AKTIF</member>
+                <member>btn_home</member>
+                <member>btn_info</member>
+                <member>BTN_LEFT</member>
+                <member>btn_mode_</member>
+                <member>btn_music_off</member>
+                <member>btn_play</member>
+                <member>BTN_RIGHT</member>
+                <member>btn_sound_off</member>
+            </members>
+            <effects>
+                <effect-type name="AdjustHSL">
+                    <effect id="hsladjust" />
+                </effect-type>
+            </effects>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Game1.xml</layout>
+        <layout>Game2.xml</layout>
+        <layout>Game3.xml</layout>
+        <layout>MainMenu.xml</layout>
+        <layout>LevelSelect.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game1.xml</event-sheet>
+        <event-sheet>Game2.xml</event-sheet>
+        <event-sheet>GlobalEvent.xml</event-sheet>
+        <event-sheet>Game3.xml</event-sheet>
+        <event-sheet>MainMenu.xml</event-sheet>
+        <event-sheet>LevelSelect.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Function" uid="9" />
+        <global-instance type="Audio" uid="10">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Touch" uid="11">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="fatah_a.ogg" />
+        <file name="fatah_aa.ogg" />
+        <file name="fatah_ba.ogg" />
+        <file name="fatah_da.ogg" />
+        <file name="fatah_dho.ogg" />
+        <file name="fatah_dza.ogg" />
+        <file name="fatah_dzo.ogg" />
+        <file name="fatah_fa.ogg" />
+        <file name="fatah_gho.ogg" />
+        <file name="fatah_ha.ogg" />
+        <file name="fatah_haa.ogg" />
+        <file name="fatah_ja.ogg" />
+        <file name="fatah_ka.ogg" />
+        <file name="fatah_kho.ogg" />
+        <file name="fatah_la.ogg" />
+        <file name="fatah_ma.ogg" />
+        <file name="fatah_na.ogg" />
+        <file name="fatah_qo.ogg" />
+        <file name="fatah_ro.ogg" />
+        <file name="fatah_sa.ogg" />
+        <file name="fatah_sho.ogg" />
+        <file name="fatah_sya.ogg" />
+        <file name="fatah_ta.ogg" />
+        <file name="fatah_tho.ogg" />
+        <file name="fatah_tsa.ogg" />
+        <file name="fatah_wa.ogg" />
+        <file name="fatah_ya.ogg" />
+        <file name="fatah_za.ogg" />
+        <file name="Button.ogg" />
+        <file name="Benar.ogg" />
+        <file name="Salah.ogg" />
+        <file name="y2mate.com - Bensound Ukulele Happy Royalty Free Music.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

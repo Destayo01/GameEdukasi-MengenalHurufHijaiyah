@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <include>GlobalEvent</include>
+        <variable constant="0" name="Efek" sid="575996941828795" static="0" type="number">0</variable>
+        <variable constant="0" name="Music" sid="153953695427622" static="0" type="number">0</variable>
+        <event-block sid="492842282122713">
+            <conditions>
+                <condition id="3" name="On touched object" sid="404769763422828" type="Touch">
+                    <param id="0" name="Object">btn_music_off</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="911312307439540">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="621121546378739" type="System">
+                            <param id="0" name="Variable">Music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="179851344550481" type="System">
+                            <param id="0" name="Variable">Music</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="547821248744315" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="323141310281420" type="btn_music_off">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="514743589486062">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="918747824173201" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="427314691343528" type="System">
+                            <param id="0" name="Variable">Music</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="222655061369535" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="773075152262566" type="btn_music_off">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="521598084261840">
+            <conditions>
+                <condition id="3" name="On touched object" sid="763087407834499" type="Touch">
+                    <param id="0" name="Object">btn_sound_off</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="112465989531416">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="843314242818327" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="296311290860832" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="154630006264152" type="Audio">
+                            <param id="0" name="Tag">&quot;efek&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="130350010233364" type="btn_sound_off">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="669397587488828">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="973990943514370" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="635574635129757" type="System">
+                            <param id="0" name="Variable">Efek</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="681267436149689" type="Audio">
+                            <param id="0" name="Tag">&quot;efek&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="123678467737718" type="btn_sound_off">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="512180447939330">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="748602258053868" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="528938191879792">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="305135322128837" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="740198233429381" type="Audio">
+                            <param id="0" name="Audio file">y2mate.com - Bensound Ukulele Happy Royalty Free Music</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="788146220539337">
+            <conditions>
+                <condition id="3" name="On touched object" sid="519053709307389" type="Touch">
+                    <param id="0" name="Object">btn_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="299689984547542" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="123234076041830" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="351992684744445" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="717333738790633" type="System">
+                    <param id="0" name="Layout">LevelSelect</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

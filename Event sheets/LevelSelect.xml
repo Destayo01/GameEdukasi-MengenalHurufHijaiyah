@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelSelect</name>
+    <events>
+        <include>GlobalEvent</include>
+        <event-block sid="715823118007031">
+            <conditions>
+                <condition id="3" name="On touched object" sid="971014416452510" type="Touch">
+                    <param id="0" name="Object">GAME</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="759625156949955" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="482588128553917" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="868016255508554" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="802172022726937" type="System">
+                    <param id="0" name="Layout">Game1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="638326867998536">
+            <conditions>
+                <condition id="3" name="On touched object" sid="840081886251709" type="Touch">
+                    <param id="0" name="Object">GAME2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="637293626701689" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="521717528768656" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="279491107966743" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="884970631802890" type="System">
+                    <param id="0" name="Layout">Game2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="195577246774501">
+            <conditions>
+                <condition id="3" name="On touched object" sid="233956018726617" type="Touch">
+                    <param id="0" name="Object">GAME3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="931259016877527" type="Function">
+                    <param id="0" name="Name">&quot;fade-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Play" sid="523650358892385" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="356488995815670" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="981478821643190" type="System">
+                    <param id="0" name="Layout">Game3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

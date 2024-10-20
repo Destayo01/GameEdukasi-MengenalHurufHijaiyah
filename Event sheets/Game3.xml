@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game3</name>
+    <events>
+        <include>GlobalEvent</include>
+        <variable constant="0" name="JawabanSalah1" sid="988910738690172" static="0" type="number">0</variable>
+        <variable constant="0" name="JawabanSalah2" sid="471879483873002" static="0" type="number">0</variable>
+        <variable constant="0" name="JawabanBenar" sid="807536438180838" static="0" type="number">0</variable>
+        <variable constant="0" name="AcakSoal" sid="592221974185646" static="0" type="number">3</variable>
+        <variable constant="0" name="AcakPosition" sid="702076638009677" static="0" type="number">3</variable>
+        <event-block sid="254970774663221">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="696862953837763" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="117585119158631" type="PengalihSoalRandom" />
+                <action id="-21" name="Reset global variables" sid="495598257070978" type="System" />
+            </actions>
+            <sub-events>
+                <variable constant="0" name="LocalID" sid="461488267209472" static="0" type="number">0</variable>
+                <event-block sid="591749908516626">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="500756190979742" type="System">
+                            <param id="0" name="Count">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="611693904679141" type="System">
+                            <param id="0" name="Object to create">PengalihSoalRandom</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">- 100</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="549692071528306" type="PengalihSoalRandom">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Value">LocalID</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="145760075460118" type="System">
+                            <param id="0" name="Variable">LocalID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="671175014640603">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="197130823040627" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="336674840967353">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="131087524516627" type="System">
+                            <param id="0" name="Variable">AcakSoal</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="929063292556929">
+                            <conditions>
+                                <condition id="-16" name="Pick random instance" sid="431639988996357" type="System">
+                                    <param id="0" name="Object">PengalihID</param>
+                                </condition>
+                                <condition id="-16" name="Pick random instance" sid="776460712273854" type="System">
+                                    <param id="0" name="Object">Huruf_Jawaban</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="619461612343644" type="Huruf_Jawaban">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="998524772643121" type="Huruf_Jawaban">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Value">PengalihID.id</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="281090257152892" type="System">
+                                    <param id="0" name="Variable">AcakSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="272802997993842" type="PengalihID" />
+                                <action id="5" name="Set frame" sid="909673646308016" type="Huruf_Jawaban">
+                                    <param id="0" name="Frame number">Self.id</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="568619688437772">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="529842155092752" type="Huruf_Jawaban">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="383919641695139" type="Huruf_Jawaban">
+                                            <param id="0" name="X">256</param>
+                                            <param id="1" name="Y">192</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="532573835683068">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="227774591934589" type="Huruf_Jawaban">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="513399792536332" type="Huruf_Jawaban">
+                                            <param id="0" name="X">256</param>
+                                            <param id="1" name="Y">384</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="121823810882779">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="511724415225129" type="Huruf_Jawaban">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="940477205322659" type="Huruf_Jawaban">
+                                            <param id="0" name="X">256</param>
+                                            <param id="1" name="Y">576</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="159621345263579">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="166604686919286" type="System">
+                            <param id="0" name="Variable">AcakPosition</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="256797907747555">
+                            <conditions>
+                                <condition id="-16" name="Pick random instance" sid="214179156406840" type="System">
+                                    <param id="0" name="Object">PengalihSoalRandom</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="676698019729569">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="193201989419787" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="373080914136063" type="System">
+                                            <param id="0" name="Variable">JawabanBenar</param>
+                                            <param id="1" name="Value">PengalihSoalRandom.ID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="332096962117790">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="194329147477657" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="357689045728199" type="System">
+                                            <param id="0" name="Variable">JawabanSalah1</param>
+                                            <param id="1" name="Value">PengalihSoalRandom.ID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="657806987276350">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="394350257747939" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="231127108553311" type="System">
+                                            <param id="0" name="Variable">JawabanSalah2</param>
+                                            <param id="1" name="Value">PengalihSoalRandom.ID</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="834065764240351">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="178357743676978" type="PengalihSoalRandom" />
+                                        <action id="-11" name="Subtract from" sid="484631652935266" type="System">
+                                            <param id="0" name="Variable">AcakPosition</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="540460610296945">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="680600989093987" type="Huruf_Container">
+                            <param id="0" name="Frame number">JawabanBenar</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="427751794501310">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="992624996934518" type="Huruf_Jawaban">
+                                    <param id="0" name="Unique ID">48</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="520422689717534" type="Huruf_Jawaban">
+                                    <param id="0" name="Frame number">JawabanBenar</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="627751450261901">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="637627578338733" type="Huruf_Jawaban">
+                                    <param id="0" name="Unique ID">49</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="303872835919916" type="Huruf_Jawaban">
+                                    <param id="0" name="Frame number">JawabanSalah1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="111241195938775">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="473211284854558" type="Huruf_Jawaban">
+                                    <param id="0" name="Unique ID">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="720714166872852" type="Huruf_Jawaban">
+                                    <param id="0" name="Frame number">JawabanSalah2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="984818060895558">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="123503205080110" type="Huruf_Jawaban" />
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="414512331352464" type="Huruf_Jawaban" />
+                <action id="0" name="Play" sid="289737735747689" type="Audio">
+                    <param id="0" name="Audio file">Button</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="330604636109201">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="590268622997830" type="Huruf_Jawaban" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="778608031146453">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="188394303353868" type="Huruf_Jawaban">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="410924958575733">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="294852915461108" type="Huruf_Jawaban">
+                                    <param id="0" name="Object">Huruf_Container</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="232421667210248">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="889416235548405" type="Huruf_Jawaban">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">JawabanBenar</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="153681722517388" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="291163029246465" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.X</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="330706108486717" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Y</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="10" name="Start" sid="248225296032856" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="386480287686587" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Width</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="377613800515113" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Height</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="635086965165951" type="Huruf_Jawaban">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="489031136127817" type="Audio">
+                                            <param id="0" name="Audio file">Benar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="908473824099142" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="804871443399617" type="Function">
+                                            <param id="0" name="Name">&quot;Finish&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="180069307119305">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="294106673289241" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="497784423107414" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="998142569336064" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">256</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="680172904430078" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">192</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="732208311358425" type="Audio">
+                                            <param id="0" name="Audio file">Salah</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="579007779969712">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="354886407953684" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="AnimPosition" id="10" name="Start" sid="831313643312968" type="Huruf_Jawaban">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="251144102856566" type="Huruf_Jawaban">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">256</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="521772116229360" type="Huruf_Jawaban">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">192</param>
+                                </action>
+                                <action id="0" name="Play" sid="179686071669994" type="Audio">
+                                    <param id="0" name="Audio file">Salah</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="867320569211458">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="591416042250404" type="Huruf_Jawaban">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="921441145646647">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="248986040262558" type="Huruf_Jawaban">
+                                    <param id="0" name="Object">Huruf_Container</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="161770786529544">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="126031742416503" type="Huruf_Jawaban">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">JawabanBenar</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="743502896370140" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="329978413989781" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.X</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="701452314169546" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Y</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="10" name="Start" sid="542555001837795" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="282700669765880" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Width</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="182704819396576" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Height</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="695952091191447" type="Huruf_Jawaban">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="525412891752934" type="Audio">
+                                            <param id="0" name="Audio file">Benar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="467811938534265" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="582631422959613" type="Function">
+                                            <param id="0" name="Name">&quot;Finish&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="769751906350961">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="202849488409701" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="388645290045827" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="120257770400158" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">256</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="228351494033915" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">384</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="170702618276571" type="Audio">
+                                            <param id="0" name="Audio file">Salah</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="686562226240346">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="557202148819177" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="AnimPosition" id="10" name="Start" sid="762961248207629" type="Huruf_Jawaban">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="103641169002045" type="Huruf_Jawaban">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">256</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="158839194540080" type="Huruf_Jawaban">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">384</param>
+                                </action>
+                                <action id="0" name="Play" sid="780150914632495" type="Audio">
+                                    <param id="0" name="Audio file">Salah</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="701188501004358">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="729661965491743" type="Huruf_Jawaban">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="396609125114342">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="765745248034707" type="Huruf_Jawaban">
+                                    <param id="0" name="Object">Huruf_Container</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="481493210353174">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="248112742531943" type="Huruf_Jawaban">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">JawabanBenar</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="232903037879453" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="796314892551777" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.X</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="255403293798467" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Y</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="10" name="Start" sid="769711371566905" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="796983615251359" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">4</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Width</param>
+                                        </action>
+                                        <action behavior="AnimSize" id="3" name="Set target" sid="547874957047593" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">5</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">Huruf_Container.Height</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="196274964773152" type="Huruf_Jawaban">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="770917747361375" type="Audio">
+                                            <param id="0" name="Audio file">Benar</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="889356445541442" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="554595441802056" type="Function">
+                                            <param id="0" name="Name">&quot;Finish&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="467393134663514">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="463321097797756" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="AnimPosition" id="10" name="Start" sid="957438499277861" type="Huruf_Jawaban">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="117375372981201" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">0</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">256</param>
+                                        </action>
+                                        <action behavior="AnimPosition" id="3" name="Set target" sid="366195645445790" type="Huruf_Jawaban">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">0</param>
+                                            <param id="2" name="Value">576</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="686504070247359" type="Audio">
+                                            <param id="0" name="Audio file">Salah</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="840186637161537">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="628451179775793" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="AnimPosition" id="10" name="Start" sid="163991516216312" type="Huruf_Jawaban">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="828727131480014" type="Huruf_Jawaban">
+                                    <param id="0" name="Target is">0</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">256</param>
+                                </action>
+                                <action behavior="AnimPosition" id="3" name="Set target" sid="982745895535796" type="Huruf_Jawaban">
+                                    <param id="0" name="Target is">1</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">576</param>
+                                </action>
+                                <action id="0" name="Play" sid="711289025208060" type="Audio">
+                                    <param id="0" name="Audio file">Salah</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;efek&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="134540785521843">
+            <conditions>
+                <condition id="0" name="On function" sid="257123520020696" type="Function">
+                    <param id="0" name="Name">&quot;Finish&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="257976881133071" type="container">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="540796422991289" type="container">
+                    <param id="0" name="Target is">3</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="969003623268347">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="143026847003533" type="Huruf_Jawaban">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Number">JawabanBenar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="AnimPosition" id="10" name="Start" sid="861208366623032" type="Huruf_Jawaban">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="AnimPosition" id="3" name="Set target" sid="244016163339576" type="Huruf_Jawaban">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-(LayoutWidth/2)</param>
+                        </action>
+                        <action behavior="AnimPosition" id="3" name="Set target" sid="249300758232890" type="Huruf_Jawaban">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">LayoutHeight/2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="880772864730636" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="429367729859489" type="Huruf_Jawaban" />
+                    </actions>
+                </event-block>
+                <event-block sid="657186093880442">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="164126822962002" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="388729603545324" type="Huruf_Container" />
+                        <action behavior="AnimPosition" id="10" name="Start" sid="955530259796614" type="Huruf_Jawaban">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="AnimPosition" id="3" name="Set target" sid="394572729453969" type="Huruf_Jawaban">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">(LayoutWidth/2)</param>
+                        </action>
+                        <action behavior="AnimPosition" id="3" name="Set target" sid="676178681521128" type="Huruf_Jawaban">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">LayoutHeight/2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="868588800898358" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="898624584397500" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="435477169898488" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="651285851899886" type="System">
+                            <param id="0" name="Variable">Huruf</param>
+                            <param id="1" name="Value">JawabanBenar</param>
+                        </action>
+                        <action id="0" name="Call function" sid="777299944723573" type="Function">
+                            <param id="0" name="Name">&quot;call-suara&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="452910001676763" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="421767447679979" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
